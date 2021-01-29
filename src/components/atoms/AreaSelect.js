@@ -1,13 +1,17 @@
 import React from "react";
 import useAreaData from "../../logic/useAreaData";
 import Constants from "../../Constants";
+import { Label, Select } from "@rebass/forms";
 
 const AreaSelect = () => {
   const { current, handleSelect } = useAreaData();
   const { prefectures } = Constants;
   return (
-    <div>
-      <select
+    <>
+      <Label htmlFor="prefecture" className="c-label">
+        エリアの選択
+      </Label>
+      <Select
         name="prefecture"
         value={current}
         onChange={(e) => handleSelect(e)}
@@ -17,8 +21,8 @@ const AreaSelect = () => {
             {prefecture}
           </option>
         ))}
-      </select>
-    </div>
+      </Select>
+    </>
   );
 };
 

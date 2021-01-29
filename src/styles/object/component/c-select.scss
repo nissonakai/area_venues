@@ -1,17 +1,5 @@
-.c-select-whole {
-    overflow: hidden;
-    width: 90%;
-    select {
-        width: 100%;
-        padding-right: 1rem;
-        cursor: pointer;
-        text-indent: 0.01px;
-        text-overflow: ellipsis;
-        border: none;
-        outline: none;
-        background: transparent;
-        appearance: none;
-    }
+.c-label {
+    font-weight: bold;
 }
 
 

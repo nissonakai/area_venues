@@ -1,0 +1,10 @@
+.p-searchbox {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 80%;
+    @include breakpoint {
+        width: 40%;
+        margin: 0 auto;
+    }
+}

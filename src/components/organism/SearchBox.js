@@ -3,8 +3,7 @@ import AreaSelect from "../atoms/AreaSelect";
 
 const SearchBox = () => {
   return (
-    <div>
-      <p>エリアの選択</p>
+    <div className="p-searchbox l-searchbox">
       <AreaSelect />
     </div>
   );
