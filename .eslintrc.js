@@ -22,7 +22,7 @@ module.exports = {
   parser: "babel-eslint",
   plugins: ["react", "prettier"],
   parserOptions: {
-    version: 2018,
+    version: 2020,
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,

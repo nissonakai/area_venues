@@ -1,6 +1,7 @@
 import React from "react";
 import Venues from "../organism/Venues";
 import SearchBox from "../organism/SearchBox";
+import CloseButton from "../atoms/CloseButton";
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <h1>面接会場検索</h1>
       <SearchBox />
       <Venues />
+      <CloseButton />
     </main>
   );
 };

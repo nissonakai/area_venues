@@ -1,0 +1,10 @@
+.c-closebutton {
+    @extend %c-button;
+    justify-content: center;
+    width: 250px;
+    border-radius: 3px;
+    background-color: #70787c;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.3rem;
+}
