@@ -8,23 +8,25 @@ const Venues = () => {
   return (
     <div className="l-venues">
       {current !== "-" ? (
-        <h2>{current}の会場</h2>
+        <>
+          <h2>{current}の会場</h2>
+          <div>
+            {targetData.length > 0 ? (
+              targetData.map((d) => <AreaCard data={d} key={d.venue} />)
+            ) : (
+              <p>
+                申し訳ございません。
+                <br />
+                ただいま面接を受け付けている会場がありません。
+                <br />
+                お近くの都道府県か、Web面接にてご応募ください。
+              </p>
+            )}
+          </div>
+        </>
       ) : (
         <h2>都道府県を選択してください</h2>
       )}
-      <div>
-        {targetData.length > 0 ? (
-          targetData.map((d) => <AreaCard data={d} key={d.venue} />)
-        ) : (
-          <p>
-            申し訳ございません。
-            <br />
-            ただいま面接を受け付けている会場がありません。
-            <br />
-            お近くの都道府県か、Web面接にてご応募ください。
-          </p>
-        )}
-      </div>
     </div>
   );
 };
