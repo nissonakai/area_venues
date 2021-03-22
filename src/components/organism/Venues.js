@@ -1,5 +1,6 @@
 import React from "react";
 import useAreaData from "../../logic/useAreaData";
+import NoVenue from "../atoms/NoVenue";
 import AreaCard from "../molecules/AreaCard";
 
 const Venues = () => {
@@ -14,13 +15,7 @@ const Venues = () => {
             {targetData.length > 0 ? (
               targetData.map((d) => <AreaCard data={d} key={d.venue} />)
             ) : (
-              <p>
-                申し訳ございません。
-                <br />
-                ただいま面接を受け付けている会場がありません。
-                <br />
-                お近くの都道府県にてご応募ください。
-              </p>
+              <NoVenue />
             )}
           </div>
         </>
